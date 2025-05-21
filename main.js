@@ -1,4 +1,4 @@
-const apiUrl = 'https://metacodeid.github.io/filebase/userdata.json');                                                                   
+const apiUrl = 'https://metacodeid.github.io/filebase/userdata.json';                                                                   
 const token = '//api.github.com/repos/metacodeid/admin-panel/contents/users.json';
 const token = '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';
 
