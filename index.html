@@ -3,30 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Panel</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>File Saver</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #file-name {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+    #file-content {
+      width: 100%;
+      height: 200px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+    #save-button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #save-button:hover {
+      background-color: #3e8e41;
+    }
+  </style>
 </head>
 <body>
-  <h1>Admin Panel</h1>
-  <table id="users-table">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody id="users-tbody">
-    </tbody>
-  </table>
-  <form id="add-user-form">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <button id="add-user-button">Add User</button>
-  </form>
+  <h1>File Saver</h1>
+  <input type="text" id="file-name" placeholder="Nama file">
+  <textarea id="file-content" placeholder="Konten file"></textarea>
+  <button id="save-button">Simpan</button>
+  <div id="result"></div>
   <script src="main.js"></script>
 </body>
 </html>
