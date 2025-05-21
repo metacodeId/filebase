@@ -1,3 +1,4 @@
-[
- {id:9999, nama: michie}
+let userMeta = [
+ {id:9999, nama: michie},
+ {id:0000, nama: lapian}
 ]
