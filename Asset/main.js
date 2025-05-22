@@ -1,1 +1,1 @@
-console.log("berhasil ")
+document.getElementById("pos").innerHTML = "ada "
