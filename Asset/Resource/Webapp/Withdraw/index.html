@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Oxanium:wght@200..800&display=swap');
+ </style>
+ <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+ <link rel="stylesheet" href="https://metacodeid.github.io/filebase/Resource/style.css">
+ <link rel="stylesheet" href="style.css">
+ <title>Withdraw</title>
+</head>
+
+<body>
+ <nav class="myNav">
+  <button class="btnBack" onclick="history.back()">
+   <span class="material-symbols-outlined iconBack">arrow_back_ios_new</span>
+   <span class="textBack">kembali</span></button>
+  <a class="btnNav" href="/Auth/History/index.html">sejarah penarikan</a>
+ </nav>
+
+<div class="contentMeta">
+ <form class="myForm" method="post" name="withdraw-form">
+  <h4 class="subForm">Penarikan</h4>
+  <input class="iForm" id="id" name="Id" readonly="readonly">
+  <input class="iForm" id="akun" name="Akun" type="tel" placeholder="Nomor e-wallet" required="required" minlength="10" maxlength="13">
+  <select class="iForm" id="metode" name="Metode" required="required">
+   <option value="">- E-wallet penarikan -</option>
+   <option value="Dana">Dana</option>
+   <option value="Gopay">Gopay</option>
+   <option value="Ovo">Ovo</option>
+   <option value="LinkAja">LinkAja</option>
+  </select>
+  <select class="iForm" id="jumlah" name="Jumlah" required="required">
+   <option value="">- Jumlah penarikan -</option>
+   <option value="Rp50.000">Rp50.000</option>
+  </select>
+  <p class="saldo" id="saldo"></p>
+  <button class="btnForm" id="btnWd"></button>
+ </form>
+ <p class="textMeta" id="noteWd">
+  > Nomor e-wallet: Masukan nomor e-wallet anda</br>
+  > E-wallet penarikan: Pilih yang sesuai dengan e-wallet anda</p></br>
+ <p class="textMeta">
+  1. Penarikan di buka setiap hari pada jam 9.00 - 17.00Wib, dan tidak dikenakan biaya</br></br>
+  2. Proses penarikan paling lambat 1-7 hari setelah permintaan dilakukan (Bisa lebih cepat apabila antrian kosong)</br></br>
+  3. minimal penarikan Rp50.000. jika saldo kurang dari Rp50.000, kami akan mengunci tombol tarik uang dan membukanya kembali setelah anda mencapai atau melebihi Rp50.000</br></br>
+  4. Pastikan kembali data penarikan anda dengan benar, jika terjadi kesalahan kami tidak akan bertanggung jawab</p>
+</div>
+
+<script src="https://metacodeid.github.io/filebase/Resource/database.js"></script>
+
+<script src="main.js"></script>
+</body>
+</html>

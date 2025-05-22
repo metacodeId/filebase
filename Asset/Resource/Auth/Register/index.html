@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Register</title>
+ <script>
+  if (localStorage.getItem("namaRegis")) {
+ window.location.href = "/Auth/Payment/index.html";
+}
+ </script>
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Oxanium:wght@200..800&display=swap');
+ </style>
+ <link rel="stylesheet" href="https://metacodeid.github.io/filebase/Resource/style.css">
+ <style>
+  #textForm{margin:10px 0px 0px 0px;}
+  
+  .urlForm{
+   font-size:11px;
+   font-weight:400;
+   padding:0px;
+   margin:0px;}
+  
+ </style>
+</head>
+<body>
+
+<div class="contentMeta">
+ <form class="myForm" method="post" name="register-form">
+  <h4 class="subForm">Buat akun</h4>
+  <input class="iForm" id="nama" name="Nama" type="text" placeholder="Nama panggilan" minlength="4" maxlength="25" required="required">
+  <input class="iForm" id="nomor" name="Nomor" type="tel" placeholder="Nomor WhatsApp" required="required" minlength="10" maxlength="14">
+  <input class="iForm" id="id" name="Id" type="tel" placeholder="Kode ID (refferal)" minlength="4" maxlength="4">
+  <button class="btnForm">Daptar</button>
+ </form>
+ <p class="textMeta" id="textForm">Sudah punya akun? <a class="urlForm" href="/Auth/Login/index.html"> Masuk</a></p>
+</div>
+<p class="invalidForm" id="invalidForm">Id refferal tidak valid</p>
+
+<script src="https://metacodeid.github.io/filebase/Resource/database.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

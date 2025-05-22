@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animasi Muncul Perlahan</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+   .container {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.judul {
+  font-size: 36px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-in-out;
+}
+
+.deskripsi {
+  font-size: 18px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-in-out;
+}
+
+.muncul {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="judul">Selamat Datang!</h1>
+    <p class="deskripsi">Ini adalah contoh animasi elemen muncul perlahan.</p>
+  </div>
+
+  <script>
+const judul = document.querySelector('.judul');
+const deskripsi = document.querySelector('.deskripsi');
+
+window.addEventListener('load', () => {
+ judul.classList.add('muncul');
+ deskripsi.classList.add('muncul');
+});
+  </script>
+</body>
+</html>

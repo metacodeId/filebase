@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Login</title>
+ <script>
+  if(localStorage.getItem("metacode")){
+   window.location.href = "/Dashboard/index.html";
+  }
+ </script>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Oxanium:wght@200..800&display=swap');
+</style>
+ <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<link rel="stylesheet" href="https://metacodeid.github.io/filebase/Resource/style.css">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<div class="contentMeta">
+ <form class="myForm" id="login-form">
+  <h4 class="subMeta">Masuk akun</h4>
+  <input class="iForm" id="id" type="tel" placeholder="Kode ID" minlength="4" maxlength="4" required="required">
+  <input class="iForm" id="token" type="text" placeholder="Kata sandi" minlength="6" maxlength="6" required="required">
+  <button class="btnForm">Masuk</button>
+ </form>
+</div>
+<p class="invalidForm" id="invalidForm">Id atau kata sandi tidak valid!!</p>
+
+<script src="https://metacodeid.github.io/filebase/Resource/database.js"></script>
+<script>
+let form = document.forms['login-form'];
+
+form.addEventListener('submit', e => {
+ e.preventDefault();
+ let idUser = document.getElementById("id").value;
+ let tokenUser = document.getElementById("token").value;
+ let user = usersMeta.find(user => user.id === idUser && user.token === tokenUser);
+ 
+ if (user) {
+  invalidForm.style.display = "none";
+  localStorage.setItem("metacode", idUser)
+ } else {
+  invalidForm.style.display = "block";
+ }
+});
+</script>
+</body>
+</html>
