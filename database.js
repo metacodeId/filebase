@@ -1,4 +1,4 @@
-[{
+let usersMeta = [{
  "id": "9999", "token": "1122gg",
  "saldo": 100,
  "idUsed": "5",
