@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<link rel="stylesheet" href="/Resource/style.css">
+ <link rel="stylesheet" href="style.css">
+ <title>Payment</title>
+</head>
+<body>
+ 
+<div class="mainTab" id="tabPay"><div class="boxTab">
+<div class="contentMeta">
+ <div class="boxPay">
+  <input class="iForm" id="userPay" readonly="readonly">
+  <a class="loginPay" href="/Auth/Login/index.html">masuk</a>
+ </div>
+ <p class="textMeta" id="textPay">
+  Selangkah lagi untuk membuatan akun anda. Klik tombol (Bayar) untuk menyelesaikan biaya pendaptaran</br></br>
+  Sementara waktu sistem pembayaran memakai pihak ketiga jadi silahkan ikuti langkah langkah <a class="urlMeta" href="/CaraBayar/index.html" target="_blank">Cara pembayaran</a>, agar tidak terjadi kesalahan</br></br>
+  Jika pembayaran telah selesai silahkan klik tombol masuk di atas untuk masuk ke akun anda</p>
+ <a class="btnForm btnBayar" href="Payment/pos.html" target="_self">Bayar</a>
+</div>
+</div></div>
+ 
+<script>
+let op = localStorage.getItem("namaRegis")
+let userPay = document.getElementById("userPay");
+
+if (localStorage.getItem("namaRegis")) {
+ userPay.value = "Hai, " + op;
+}
+</script>
+</body>
+</html>

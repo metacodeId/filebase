@@ -1,1 +1,0 @@
-document.getElementById("pos").innerHTML = "ada "
