@@ -17,3 +17,4 @@ if(user){
   saldoPage.innerHTML = "Rp" + mySaldo + ".000";
  }
 }
+
