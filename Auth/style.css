@@ -1,0 +1,45 @@
+.noteLogin{
+ font-size:10.5px;
+ margin:8px 0px 0px 0px;}
+
+.urlForm{
+ background:transparent;
+ text-decoration:underline;
+ font-size:10.5px;
+ color:#eee}
+ 
+#loginForm{
+ position:fixed;
+ top:0px;
+ left:5%;
+ margin:5% 0px 0px 0px;
+ z-index:100;}
+ 
+#regisForm{
+ position:fixed;
+ top:0px;
+ left:5%;
+ margin:5% 0px 0px 0px;
+ opacity:0;
+ transition:0.3s;
+ z-index:-100;}
+ 
+#regisForm:target{
+ z-index:200;
+ opacity:1;
+ transition:0.4s;}
+ 
+#paymentPage{
+ display:block;
+ position:fixed;
+ top:0px;
+ left:5%;
+ margin:5% 0px 0px 0px;
+ opacity:1;
+ transition:0.3s;
+ z-index:500;}
+ 
+#paymentPage:target{
+ opacity:0;
+ z-index:50;
+ transition:0.3s;}

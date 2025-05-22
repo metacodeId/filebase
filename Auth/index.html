@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <style>
@@ -7,19 +8,43 @@
  </style>
  <link rel="stylesheet" href="https://metacodeid.github.io/filebase/Resource/style.css">
  <link rel="stylesheet" href="style.css">
- <title>HTML</title>
+ <title>Auth</title>
 </head>
 <body>
  
-<form class="contentMeta">
+<!----Login---->
+<form class="myForm" id="loginForm">
  <h4 class="subForm">Masuk akun</h4>
  <input class="iForm" id="idLogin" type="tel" placeholder="Masukan id">
  <input class="iForm" id="tokenLogin" type="text" placeholder="Masukan kata sandi">
  <button class="btnForm">Masuk</button>
- <p class="textMeta" id="textFormLogin">Belum punya akun? <a class="urlForm" href="#tabRegis">Daptar</a></p>
+ <p class="textMeta noteLogin">Belum punya akun? <a class="urlForm" href="#regisForm">Daptar</a></p>
 </form>
+<span class="invalidForm" id="invalidLogin">Id atau kata sandi tidak valid</span>
 
-<span class="invalidForm">Id atau kata sandi tidak valid</span>
+<!----Register---->
+<form class="myForm" id="regisForm">
+ <h4 class="subForm">Buat akun</h4>
+ <input class="iForm" id="namaRegis" name="Nama" type="text" minlength="4" placeholder="Nama panggilan">
+ <input class="iForm" id="nomorRegis" name="Nomor" type="tel" minlength="10" maxlength="14" placeholder="Nomor WhatsApp">
+ <input class="iForm" id="idRegis" name="Id" type="tel" minlength="4" maxlength="4" placeholder="Kode ID (refferal)">
+ <button class="btnForm">Daptar</button>
+ <p class="textMeta noteLogin">Sudah punya akun? <button class="urlForm" onclick="history.back()">Masuk</button></p>
+</form>
+<span class="invalidForm" id="invalidRegis">Id refferal tidak valid</span>
+
+<!----Payment---->
+<div class="contentMeta" id="paymentPage">
+ <div class="boxPay">
+  <h3 class="subMeta" id="userPay">Michelle lapian</h3>
+  <a class="btnPay" href="#paymentPage">masuk</a>
+ </div>
+ <p class="textMeta" id="textPay">
+  Selangkah lagi untuk membuatan akun anda. Klik tombol (Bayar) untuk menyelesaikan biaya pendaptaran</br></br>
+  Sementara waktu sistem pembayaran memakai pihak ketiga jadi silahkan ikuti langkah langkah <a class="urlMeta" href="/CaraBayar/index.html" target="_blank">Cara pembayaran</a>, agar tidak terjadi kesalahan</br></br>
+  Jika pembayaran telah selesai silahkan klik tombol masuk di atas untuk masuk ke akun anda</p>
+ <a class="btnForm" href="#" target="_blank">Bayar</a>
+</div>
 
 <script src="main.js">main.js</script>
 </body>

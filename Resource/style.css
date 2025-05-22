@@ -80,12 +80,17 @@ input, select, button, a{
  border-color:#606060;
  transition:0.2s;}
  
+.iForm::placeholder{
+ color:#777;
+ font-size:13.5px;}
+ 
 .btnForm{
  display:block;
  padding:11px 11px 10px 11px;
  margin:0px;
  font-size:14px;
  font-weight:550;
+ text-align:center;
  color:#101010;
  background:#0ef;
  height:max-content;
