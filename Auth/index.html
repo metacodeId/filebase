@@ -6,12 +6,19 @@
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Oxanium:wght@200..800&display=swap');
  </style>
+ <link rel="stylesheet" href="https://metacodeid.github.io/filebase/metaStyle.css">
  <link rel="stylesheet" href="style.css">
  <title></title>
 </head>
 <body>
  
-
+<form class="contentMeta" method="post" id="loginForm">
+ <h4 class="subMeta">Masuk akun</h4>
+ <input class="iForm" id="idLogin" type="tel" placeholder="Kode ID" minlength="4" maxlength="4">
+ <input class="iForm" id="tokenLogin" type="text" placeholder="Kode ID" minlength="5" maxlength="5">
+ <button class="btnForm">Masuk</button>
+ <p class="textMeta" id="textLogin">Belum punya akun? <button class="btnTextForm" onclick="openRegis()">Daptar</button></p>
+</form>
 
 <script src="https://metacodeid.github.io/filebase/metaData.js"></script>
 <script src="main.js"></script>
