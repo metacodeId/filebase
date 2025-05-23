@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Oxanium:wght@200..800&display=swap');
+ </style>
+ <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+ <link rel="stylesheet" href="https://metacodeid.github.io/filebase/Resource/style.css">
+ <link rel="stylesheet" href="style.css">
+ <title>Profil</title>
+</head>
+
+<body>
+ <nav class="myNav">
+  <button class="btnBack" onclick="history.back()">
+   <span class="material-symbols-outlined iconBack">arrow_back_ios_new</span>
+   <span class="textBack">kembali</span></button>
+  <button class="btnNav" onclick="goLogout()">keluar</button>
+ </nav>
+ 
+<div class="contentMeta">
+ <h4 class="subMeta">Profil saya</h4>
+ <div class="itemPage">
+  <h6 class="judulPage">Nama panggilan</h6>
+  <input class="textPage" id="nama" value="Michhiee lapian" type="text" maxlength="25">
+ </div>
+ <div class="itemPage">
+  <h6 class="judulPage">Id saya</h6>
+  <h5 class="textPage" id="id">0000</h5>
+ </div>
+ <div class="itemPage">
+  <h6 class="judulPage">Id digunakan total</h6>
+  <h5 class="textPage" id="idUsed">0×</h5>
+ </div>
+  <button class="btnForm" onclick="changeName()">Ubah profil</button>
+</div>
+
+<script src="https://metacodeid.github.io/filebase/Resource/database.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

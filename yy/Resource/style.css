@@ -1,0 +1,107 @@
+/* Default */
+*{
+ box-sizing:border-box;
+ -webkit-tap-highlight-color: transparent !important;
+ outline: none !important;}
+ 
+body{
+ background:#101010;
+ font-family:"Oxanium",sans-serif;
+ height:100%;
+ width:100%;
+ padding:0px;
+ margin:0px;}
+ 
+input, select, button, a{
+ padding:0px;
+ margin:0px;
+ font-family:inherit;
+ border:none;
+ border-radius:2px;
+ color:#101010;}
+ 
+.contentMeta{
+ display:block;
+ padding:15px;
+ margin:5% auto 0px auto;
+ width:90%;
+ background:#151515;
+ border:0.5px solid #333;
+ border-radius:2px;}
+ 
+.judulMeta{
+ display:block;
+ padding:0px;
+ margin:0px;
+ font-size:14px;
+ font-weight:550;
+ color:#eee;}
+ 
+.textMeta {
+ display: block;
+ padding: 0px;
+ margin: 0px;
+ font-size: 11px;
+ font-weight: 400;
+ color: #aaa;}
+
+.myForm{
+ display:block;
+ background:#151515;
+ width:90%;
+ padding:20px;
+ margin:5% auto 0px auto;
+ border:0.5px solid #333;
+ border-radius:2px;}
+
+.subForm{
+ display:block;
+ padding:0px;
+ margin:0px;
+ font-size:14.5px;
+ font-weight:650;
+ color:#eee;}
+
+.iForm{
+ display:block;
+ padding:12px 11.5px 10px 11.5px;
+ margin:15px 0px 20px 0px;
+ height:max-content;
+ width:100%;
+ box-sizing:border-box;
+ background:#252525;
+ color:#fff;
+ border:0.5px solid #303030;
+ font-size:14px;
+ font-weight:500;
+ transition:0.2s;}
+
+.iForm:focus{
+ border-color:#606060;
+ transition:0.2s;}
+ 
+.iForm::placeholder{
+ color:#777;
+ font-size:13.5px;}
+ 
+.btnForm{
+ display:block;
+ padding:11px 11px 10px 11px;
+ margin:0px;
+ font-size:14px;
+ font-weight:550;
+ text-align:center;
+ color:#101010;
+ background:#0ef;
+ height:max-content;
+ width:100%;
+ box-sizing:border-box;}
+
+.invalidForm{
+ display:none;
+ padding:0px;
+ margin:8px auto;
+ width:max-content;
+ color:red;
+ font-size:10.5px;
+ font-weight:400;}

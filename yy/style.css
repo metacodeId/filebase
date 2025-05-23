@@ -1,0 +1,94 @@
+
+
+.noteLogin{
+ font-size:10.5px;
+ margin:8px 0px 0px 0px;}
+
+.urlForm{
+ background:transparent;
+ text-decoration:underline;
+ font-size:10.5px;
+ color:#eee}
+ 
+ /* Login*/
+#loginForm{
+ position:fixed;
+ top:0px;
+ left:5%;
+ margin:40px 0px 0px 0px;
+ z-index:100;}
+
+ /* Register */
+#regisForm{
+ position:fixed;
+ top:0px;
+ left:5%;
+ margin:40px 0px 0px 0px;
+ opacity:0;
+ transition:0.3s;
+ z-index:-100;}
+ 
+#regisForm:target{
+ z-index:200;
+ opacity:1;
+ transition:0.4s;}
+ 
+ /* Pay */
+#paymentPage{
+ display:none;
+ position:fixed;
+ top:0px;
+ left:5%;
+ margin:40px 0px;
+ opacity:1;
+ transition:0.3s;
+ z-index:500;}
+ 
+#paymentPage:target{
+ opacity:0;
+ z-index:50;
+ transition:0.3s;}
+ 
+.boxPay{
+ display:flex;
+ justify-content:space-between;
+ height:max-content;
+ padding:0px;
+ margin:0px;}
+ 
+#userPay{
+ margin:auto 0px;}
+
+.btnPay{
+ display:block;
+ padding:4px 8px 3px 8px;
+ margin:auto 0px;
+ font-size:11px;
+ font-weight:400;
+ color:#eee;
+ border:0.5px solid #333;
+ text-decoration:none;}
+ 
+#textPay{
+ margin:15px 5px;}
+ 
+.urlPay{color:#fff}
+
+.gopay{text-decoration:none}
+
+.goHelp{
+ position:fixed;
+ top:10px;
+ right:10px;
+ color:#eee;
+ border:0.5px solid #333;
+ z-index:999;
+ font-size:10.5px;
+ font-weight:400;
+ text-decoration:none;
+ padding:4px 8px 3px 8px;}
+ 
+#invalidLogin{
+ position:relative;
+ top:10px;
+}

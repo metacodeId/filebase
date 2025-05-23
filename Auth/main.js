@@ -1,1 +1,1 @@
-console.log(usersMeta)
+console.table(metaData)

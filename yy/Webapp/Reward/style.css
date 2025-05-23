@@ -1,0 +1,32 @@
+.myNav{
+ display:flex;
+ justify-content:space-between;
+ padding:0px;
+ margin:0px;
+ height:40px;
+ width:100%;
+ box-sizing:border-box;}
+
+.btnBack{
+ color:#eee;
+ display:flex;
+ justify-content:flex-start;
+ height:max-content;
+ padding:0px;
+ margin:auto 0px auto 6px;}
+ 
+.iconBack{
+ display:block;
+ font-size:18px;
+ font-weight:400;
+ padding:0px;
+ margin:auto 0px;}
+ 
+.textBack{
+ position:relative;
+ top:1px;
+ display:block;
+ padding:0px;
+ margin:auto 0px;
+ font-size:13px;
+ font-weight:450;}

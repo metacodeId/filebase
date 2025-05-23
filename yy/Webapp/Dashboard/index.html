@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Oxanium:wght@200..800&display=swap');
+</style>
+ <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+ <link rel="stylesheet" href="https://metacodeid.github.io/filebase/Resource/style.css">
+ <link rel="stylesheet" href="style.css">
+ <title>Dashboard</title>
+</head>
+<body>
+ 
+<nav class="myNav">
+ <div class="boxLogo">
+  <img class="imgLogo" src="https://metacodeid.github.io/filebase/Resource/Image/Logo.png">
+  <h1 class="brand">metacode</h1>
+ </div>
+ <div class="boxNav">
+  <a class="btnMenu" href="https://metacodeid.github.io/filebase/Webapp/Profil/">
+   <span class="material-symbols-outlined iconMenu">money_bag</span></a>
+  <a class="btnMenu" href="/Webapp/Help/index.html">
+   <span class="material-symbols-outlined iconMenu">Help_center</span></a>
+  <a class="btnMenu" href="/Webapp/Profil">
+   <span class="material-symbols-outlined iconMenu">person</span></a>
+ </div>
+</nav>
+
+<div class="boxIngfo">
+ <marquee class="ingfo" scrollamount="2" behavior="scroll" direction="left">💰 Dapatkan bonus saldo tambahan dengan menyelesaikan tugas harian 💰</marquee>
+ <a class="btnIngfo" href="/Webapp/Reward/index.html">lihat></a>
+</div>
+ 
+<div class="contentMeta">
+ <h4 class="subMeta">Penghasilan saya</h4>
+ <h2 class="saldoPage" id="saldoPage"></h2>
+ <div class="boxPage">
+  <p class="textPage" id="idPage"></p>
+  <p class="textPage">Tarif ID: Rp20.000</p>
+ </div>
+</div>
+
+<div class="contentMeta">
+ <h4 class="subMeta">Statistik</h4>
+  <p class="judulStat">Tanggal | ID digunakan | Penghasilan</p>
+  <div class="boxStat"><p class="textMeta" id="textStat"></p></div>
+  <span class="noteStat">*Statistik di perbaharui setiap hari pada jam 20.00wib</span>
+</div>
+
+<script src="https://metacodeid.github.io/filebase/database.js"></script>
+<script src="main.js">main.js</script>
+</body>
+</html>
