@@ -1,0 +1,81 @@
+/* Default */
+#subForm{font-size:14.5px;}
+#textForm{
+ font-size:10.5px;
+ margin:10px 0px 0px 0px}
+ 
+#btnTextForm{font-size:10.5px;}
+
+/* Login */
+#loginForm{
+ position:fixed;
+ top:0%;
+ left:5%;
+ z-index:500;
+ margin:5% auto 0px auto;}
+
+/* Register */
+#regisForm{
+ opacity:0.8;
+ transition:0.6s;
+ position:fixed;
+ top:0%;
+ left:5%;
+ z-index:0;
+ margin:5% auto 0px auto;}
+ 
+#regisForm:target{
+ opacity:1;
+ z-index:19999;
+}
+
+/* Payments */
+#payPage{
+ display:none;
+ z-index:100;
+ overflow:hidden;
+ position:fixed;
+ top:0%;
+ left:5%;
+ margin:5% auto 0px auto;}
+ 
+.boxPay{
+ display:flex;
+ justify-content:space-between;
+ height:max-content;}
+
+#subPay{
+ font-size:14.3px;
+ margin:auto 0px;}
+
+.btnPay{
+ border:0.5px solid #333;
+ font-size:11px;
+ font-weight:409;
+ color:#eee;
+ background:transparent;
+ padding:4px 8px 3px 8px;
+ margin:auto 0px;}
+
+#textPay{margin:15px 4px;}
+
+.openTutor{
+ padding:0px;
+ margin:0px;
+ font-size:11px;
+ font-weight:400;
+ color:#eee;
+ text-decoration:underline;}
+
+#btnBayar{text-decoration:none;}
+
+/* Tutorial */
+#tutorPage{
+ display:none;
+ height:max-content;
+ overflow:hidden;
+ z-index:0;
+ position:fixed;
+ top:0%;
+ left:5%;
+ margin:5% auto 0px auto;}

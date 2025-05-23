@@ -12,13 +12,37 @@
 </head>
 <body>
  
-<form class="contentMeta" method="post" id="loginForm">
- <h4 class="subMeta">Masuk akun</h4>
- <input class="iForm" id="idLogin" type="tel" placeholder="Kode ID" minlength="4" maxlength="4">
- <input class="iForm" id="tokenLogin" type="text" placeholder="Kode ID" minlength="5" maxlength="5">
+<form class="contentMeta" id="post" id="formLogin">
+ <h4 class="subMeta subForm">Masuk akun</h4>
+ <input class="iForm" id="idLogin" type="tel" placeholder="Kode ID">
+ <input class="iForm" id="tokenLogin" type="text" placeholder="Kata sandi">
  <button class="btnForm">Masuk</button>
- <p class="textMeta" id="textLogin">Belum punya akun? <button class="btnTextForm" onclick="openRegis()">Daptar</button></p>
+ <p class="textForm" id="textFormLogin">Belum punya akun ? <a class="btnTextForm" href="#regisForm">Daptar</a></p>
+ <button class="textForm" type="button" onclick="history.back()">Bayar pendaptaran</button> 
 </form>
+ 
+<form class="contentMeta" method="post" id="regisForm" name="regisForm">
+ <h4 class="subMeta" id="subForm">Buat akun</h4>
+ <input class="iForm" id="nomorRegis" name="Nomor" type="tel" minlength="10" maxlength="13" placeholder="Nomor WhatsApp">
+ <input class="iForm" id="idRegis" name="Id" type="tel" minlength="4" maxlength="4" placeholder="Kode ID (refferal)">
+ <button class="btnForm">Daptar</button>
+ <p class="textMeta" id="textForm">Sudah punya akun? <button class="btnTextForm" type="button" onclick="history.back()">Masuk</button></p>
+</form>
+
+<div class="contentMeta" id="payPage">
+ <div class="boxPay">
+  <h4 class="subMeta" id="subPay">Bayar pendaptaran</h4>
+  <a class="btnPay" href="#formLogin">Masuk</button></div>
+  <p class="textMeta" id="textPay">
+   Selangkah lagi untuk membuat akun. Klik tombol (Bayar) untuk menyelesaikan biaya pendaptaran</br></br>
+   Kami kenakan biaya pendaptaran Rp20.000, biaya ini hanya untuk pendaptaran saja. setelahnya anda bisa bebas menghasilkan uang di metacode tanpa mengeluarkan biaya lagi</br></br>
+   Sementara waktu sistem pembayaran memakai pihak ketiga jadi silahkan ikuti langkah langkah <button class="openTutor" onclick="openTutor()">Cara pembayaran</button>, agar tidak terjadi kesalahan</br></br>jika anda membutuhkan bantuan, silahkan klik tombol hubungi</p>
+  <a class="btnForm" id="btnBayar" href="#">Bayar</a>
+</div>
+
+<div class="contentMeta" id="tutorPage">
+ <h3>itu 27363637ehrh</h3>
+</div>
 
 <script src="https://metacodeid.github.io/filebase/metaData.js"></script>
 <script src="main.js"></script>
